@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomeFragment">
+
+    <RelativeLayout
+        android:id="@+id/action_bar_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/welfare_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/welfare_img" />
+
+        <TextView
+            android:id="@+id/top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="丽岛物业"
+            android:textColor="@color/color_ff333333"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/message_iv"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/message_img" />
+    </RelativeLayout>
+
+    <!--<com.scwang.smartrefresh.layout.SmartRefreshLayout-->
+        <!--android:id="@+id/refresh_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--app:srlAccentColor="@color/list_line"-->
+        <!--app:srlEnableHeaderTranslationContent="false"-->
+        <!--app:srlEnableNestedScrolling="true"-->
+        <!--app:srlEnablePreviewInEditMode="false"-->
+        <!--app:srlPrimaryColor="@color/color_37A2AC">-->
+        <!--<com.scwang.smartrefresh.header.MaterialHeader-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"/>-->
+        <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:id="@+id/community_service_rv"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:paddingStart="10dp"-->
+            <!--android:paddingEnd="10dp"/>-->
+
+    <!--</com.scwang.smartrefresh.layout.SmartRefreshLayout>-->
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnablePreviewInEditMode="false"
+        android:layout_below="@+id/action_bar_rl">
+        <com.scwang.smartrefresh.header.MaterialHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@color/white"
+                    android:paddingTop="10dp">
+                    <cn.bingoogolapple.bgabanner.BGABanner
+                        android:id="@+id/ad_banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"
+                        app:banner_pointContainerBackground="@android:color/transparent"
+                        app:banner_pointDrawable="@drawable/selector_banner_unequal"
+                        app:banner_pointTopBottomMargin="5dp"
+                        app:banner_transitionEffect="alpha" />
+                </RelativeLayout>
+                <include layout="@layout/head_lines_layout"/>
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="20dp"
+                    android:scrollbars="none">
+                    <LinearLayout
+                        android:id="@+id/fast_entry_ll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="7dp"
+                        android:paddingEnd="15dp"
+                        android:orientation="horizontal"/>
+                </HorizontalScrollView>
+                
+                <include layout="@layout/housekeeper_layout"/>
+                <include layout="@layout/hf_event_layout" />
+                <include layout="@layout/community_service_layout" />
+                <include layout="@layout/special_products_layout" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"/>
+            </LinearLayout>
+        </ScrollView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="我们是有底线的"
+            android:textColor="@color/list_line"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</RelativeLayout>

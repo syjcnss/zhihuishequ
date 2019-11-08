@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/action_bar_rl"
+        style="@style/top_rl"
+        >
+
+        <ImageView
+            android:id="@+id/back_iv"
+            style="@style/top_back"
+            />
+
+        <TextView
+            android:id="@+id/top_title"
+            style="@style/top_title"
+            android:text="个人信息"
+            />
+
+    </RelativeLayout>
+
+    <View
+        style="@style/split_line"/>
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/rl_top"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="136dp"-->
+        <!--android:background="@color/white"-->
+        <!--&gt;-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_personal_head"-->
+            <!--android:layout_width="45dp"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_personal_name"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/iv_personal_head"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!--/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_person_content"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/tv_personal_name"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--/>-->
+
+
+    <!--</RelativeLayout>-->
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/nei_smart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <ListView
+        android:id="@+id/lv_personal_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        >
+
+    </ListView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

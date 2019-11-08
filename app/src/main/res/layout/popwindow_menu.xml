@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="130dp"
+        android:layout_height="135dp"
+        android:background="#555555"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/menu_my_post"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="我的发帖"
+            android:textColor="@color/white"
+            />
+        <View
+            style="@style/split_line"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            />
+
+        <TextView
+            android:id="@+id/menu_my_response"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="我的回复"
+            android:textColor="@color/white"
+            />
+
+        <View
+            style="@style/split_line"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            />
+
+        <TextView
+            android:id="@+id/menu_my_good"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="我的点赞"
+            android:textColor="@color/white"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

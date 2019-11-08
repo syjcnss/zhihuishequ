@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/child_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="2018-02-18至2018-03-30"
+        android:textSize="14sp"
+        android:textColor="@color/title_text"/>
+
+    <TextView
+        android:id="@+id/child_money_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="需缴纳58元"
+        android:layout_marginStart="5dp"
+        android:textSize="14sp"
+        android:textColor="@color/title_text"/>
+    <ImageView
+        android:id="@+id/btn_child_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:button="@null"
+        android:src="@drawable/payment_child_item_selector" />
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/neighborhood_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:id="@+id/line2_view"
+                android:layout_width="2dp"
+                android:layout_height="18dp"
+                android:background="@color/action_bar_color"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:id="@+id/neighborhood_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textStyle="bold"
+                android:text="邻里"
+                android:textSize="18sp"
+                android:textColor="@color/title_text"/>
+            <TextView
+                android:id="@+id/neighborhood_type_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/neighborhood_title_tv"
+                android:layout_marginLeft="20dp"
+                android:layout_alignBottom="@id/neighborhood_title_tv"
+                android:text="团结友爱 互帮互助"
+                android:textSize="13sp"
+                android:textColor="@color/rb_text_normal"/>
+            <TextView
+                android:id="@+id/neighborhood_more_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@id/neighborhood_title_tv"
+                android:layout_marginRight="15dp"
+                android:text="更多 >"
+                android:textColor="@color/title_text"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+        <com.ovu.lido.widgets.ListViewForScrollView
+            android:id="@+id/neighborhood_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"/>
+    </LinearLayout>
+</RelativeLayout>

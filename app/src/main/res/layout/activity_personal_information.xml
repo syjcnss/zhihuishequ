@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/action_bar_rl"
+        style="@style/top_rl"
+        >
+
+        <ImageView
+            android:id="@+id/back_iv"
+            style="@style/top_back"
+            />
+
+        <TextView
+            android:id="@+id/top_title"
+            style="@style/top_title"
+            android:text="个人资料"
+            />
+
+        <TextView
+            android:id="@+id/top_save"
+            style="@style/top_title"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:text="保存"
+            android:textSize="15sp"
+            />
+
+
+    </RelativeLayout>
+
+    <View
+        style="@style/split_line"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/ll_person_detail_head"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="头像"
+                    android:textColor="@color/title_text"
+                    android:textSize="15sp"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:id="@+id/iv_person_detail_head"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/circle_image"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/right_tip"
+                    />
+
+            </LinearLayout>
+
+            <View
+                style="@style/split_line"
+                android:paddingLeft="16dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="姓名"
+                    android:textColor="@color/title_text"
+                    android:textSize="15sp"
+                    />
+
+                <TextView
+                    android:id="@+id/et_detail_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:gravity="right"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:textColor="@color/title_text"
+                    />
+
+            </LinearLayout>
+
+            <View
+                style="@style/split_line"
+                android:paddingLeft="16dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="电话"
+                    android:textColor="@color/title_text"
+                    android:textSize="15sp"
+                    />
+
+                <TextView
+                    android:id="@+id/et_detail_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:gravity="right"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:textColor="@color/title_text"
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="昵称"
+                    android:textColor="@color/title_text"
+                    android:textSize="15sp"
+                    />
+
+                <EditText
+                    android:id="@+id/et_detail_nickname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:text=""
+                    android:textSize="14sp"
+
+                    />
+
+            </LinearLayout>
+
+            <View
+                style="@style/split_line"
+                android:paddingLeft="16dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="性别"
+                    android:textColor="@color/title_text"
+                    android:textSize="15sp"
+                    />
+
+                <TextView
+                    android:id="@+id/et_detail_sex"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:textColor="@color/title_text"
+
+                    />
+
+
+            </LinearLayout>
+
+            <View
+                style="@style/split_line"
+                android:paddingLeft="16dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/ll_change_passwod"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="修改密码"
+                    android:textColor="@color/title_text"
+                    android:textSize="15sp"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/right_tip"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="职业(选填)"
+                    android:textColor="@color/title_text"
+                    android:textSize="15sp"
+                    />
+
+                <EditText
+                    android:id="@+id/et_job"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="未填写"
+                    android:textSize="14sp"
+                    android:maxLength="10"
+                    android:textColor="@color/title_text"
+                    />
+
+
+            </LinearLayout>
+
+            <View
+                style="@style/split_line"
+                android:paddingLeft="16dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="爱好(选填)"
+                    android:textColor="@color/title_text"
+                    android:textSize="15sp"
+                    />
+
+                <EditText
+                    android:id="@+id/et_hobby"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="未填写"
+                    android:textSize="14sp"
+                    android:maxLength="10"
+                    android:textColor="@color/title_text"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

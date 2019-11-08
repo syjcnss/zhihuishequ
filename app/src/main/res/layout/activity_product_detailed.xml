@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/action_bar_rl"
+        style="@style/top_rl"
+        >
+
+        <ImageView
+            android:id="@+id/back_iv"
+            style="@style/top_back"
+            />
+
+        <TextView
+            android:id="@+id/top_title"
+            style="@style/top_title"
+            android:text="商品详情"
+            />
+
+    </RelativeLayout>
+
+    <View
+        style="@style/split_line"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp">
+
+                <ImageView
+                    android:id="@+id/iv_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:scaleType="fitXY"
+                    android:layout_centerInParent="true"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    >
+
+                    <View
+                        style="@style/placeHolder"/>
+
+                    <TextView
+                        android:id="@+id/tv_remain_time"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="#e6ffae00"
+                        android:gravity="center"
+                        android:text="距离结束时间 00:00:00"
+                        android:textColor="@color/white"
+                        />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <View
+                style="@style/split_line"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="112dp">
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="24dp"
+                    android:text=""
+                    android:textColor="@color/money_color"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_own_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_price"
+                    android:layout_marginStart="15dp"
+                    android:text=""
+                    android:textColor="@color/gray"
+                    android:textSize="14sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_own_price"
+                    android:layout_marginStart="15dp"
+                    android:text=""
+                    android:textColor="@color/title_text"
+                    android:textSize="18sp"
+                    />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/distant_color"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="16dp"
+                    android:text="商品详情"
+                    android:textColor="@color/title_text"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="8dp"
+                    android:text=""
+                    />
+
+                <WebView
+                    android:id="@+id/wb_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    >
+
+
+                </WebView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        style="@style/split_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_apply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/apply_img"
+                />
+
+            <TextView
+                android:id="@+id/tv_apply_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@+id/iv_apply"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_join"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/activity_state_selector"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+</LinearLayout>

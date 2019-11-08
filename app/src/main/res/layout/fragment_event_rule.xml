@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.EventRuleFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/title_text"
+                android:lineSpacingExtra="6dp"
+                android:text="1.每人每天3次抽奖机会。\n2.使用一定数量积分可参与大转盘抽奖活动。\n3.中将所得积分数量直接累计。\n4.本活动奖品由i丽岛平台及合作方提供。\n5.抽中奖品后，在5天后、30天内到物业服务中心领取，工作人员会联系你，逾期作废。
+                \n6.凡以不正当手段（包括但不限于作弊、扰乱系统、实施网络攻击等）参与本活动的用户，i丽岛平台将终止其参与活动，取消资格。\n7.i丽岛平台可根据活动举办的实际情况，在法律允许范围内，对本互动规则进行变动或调整，并公布在活动规则上。
+                \n8.更多玩法持续更新中。"/>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="action_bar_color">#37A2AC</color>
+    <color name="rb_text_selected">#37A2AC</color>
+    <color name="rb_text_normal">#999999</color>
+    <color name="black">#000000</color>
+    <color name="title_text">#333333</color>
+    <color name="content_text">#666666</color>
+    <color name="gray">#999999</color>
+    <color name="color_ff333333">#ff333333</color>
+    <color name="color_ff666666">#ff666666</color>
+    <color name="color_ff999999">#ff999999</color>
+    <color name="color_ff71b54f">#ff71b54f</color>
+    <color name="color_dddddd">#DDDDDD</color>
+    <color name="list_line">#dadada</color>
+    <color name="white">#ffffff</color>
+    <color name="head_line_bg">#0d363d4d</color>
+    <color name="head_line_title">#ffae00</color>
+    <color name="payment_method_money">#ff9b00</color>
+    <color name="head_line_content">#363d4d</color>
+    <color name="event_img_bg">#acd598</color>
+    <color name="line_color">#dadada</color>
+    <color name="main_color">#37A2AC</color>
+    <color name="money_color">#ffae00</color>
+    <color name="distant_color">#f5f5f5</color>
+    <color name="activity_color">#ff5a00</color>
+    <color name="translucence_6">#66000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="text_green">#27ae60</color>
+    <color name="bg_red">#ff8e6c</color>
+    <color name="bg_blue">#6abce7</color>
+    <color name="darker_gray">#aaa</color>
+    <color name="text_bbb">#bbb</color>
+    <color name="btn_bg">#27ae60</color>
+
+    <color name="color_37A2AC">#37A2AC</color>
+    <color name="color_eeeeee">#EEEEEE</color>
+    <color name="red">#FF0000</color>
+    <color name="color_f9edeb">#FFF9EDEB</color>
+    <color name="color_e5e9f6">#FFE5E9F6</color>
+    <color name="color_030303">#030303</color>
+    <color name="color_f8f8fa">#F8F8FA</color>
+    <color name="color_777777">#777777</color>
+</resources>

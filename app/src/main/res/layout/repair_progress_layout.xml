@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/repair_progress_ll"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/more_repair_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/line_view"
+            android:layout_width="2dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:background="@color/action_bar_color" />
+
+        <TextView
+            android:id="@+id/report_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="报事进程"
+            android:textColor="@color/title_text"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/more_repair_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/report_title_tv"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:text="更多 >"
+            android:textColor="@color/title_text"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/content_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/report_content_tv"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="@color/content_text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/report_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/report_content_tv"
+            android:layout_alignLeft="@id/report_content_tv"
+            android:layout_marginTop="6dp"
+            android:text=""
+            android:textColor="@color/content_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/work_status_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:text=""
+            android:textColor="@color/head_line_title"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</LinearLayout>

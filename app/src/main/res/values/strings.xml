@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">i丽岛</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--关于应用更新-->
+    <string name="update_title">更新</string>
+    <string name="force_update_title">请更新到%1$s，否则无法使用</string>
+
+    <string name="home">首页</string>
+    <string name="event_home">活动</string>
+    <string name="community">社区</string>
+    <string name="mall">商城</string>
+    <string name="neighbor">邻里</string>
+    <string name="store">商店</string>
+    <string name="my">我的</string>
+    <string name="title_activity_login">登陆</string>
+
+    <!--满意度调查-->
+    <string name="good">满意</string>
+    <string name="soso">一般</string>
+    <string name="bad">不满意</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">请输入手机号</string>
+    <string name="prompt_password">请输入密码</string>
+    <string name="action_sign_in">登录</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">此电话号码无效</string>
+    <string name="error_invalid_password">该密码太短</string>
+    <string name="error_incorrect_password">此密码不正确</string>
+    <string name="error_field_required">手机号码不能为空</string>
+    <string name="get_captcha">获取短信验证码</string>
+    <string name="seconds_re_verification">重新获取(%s)</string>
+    <string name="verification_code_empty">验证码不能为空</string>
+    <string name="input_new_password">请输入新密码</string>
+    <string name="input_new_password_2">请再次输入新密码</string>
+    <string name="password_length_error">密码最少6位</string>
+    <string name="password_not_equal">两次输入的密码不一致</string>
+    <string name="modify_password_success">修改密码成功</string>
+    <string name="permission_rationale">"提供电子邮件完成需要联系人权限"</string>
+    <string name="about_introduction">专业团队 贴心服务\n和谐社区 亲密互动\n一键报事 轻松缴费\n在线评价 智慧到家</string>
+    <string name="menu_intro">功能介绍</string>
+    <string name="agreement">使用协议</string>
+    <string name="check_version">检查更新</string>
+
+    <string name="token_error">身份验证失效，请重新登录</string>
+
+    <!-- WXPayEntryActivitys -->
+    <string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+
+
+    <string name="app_tip">提示</string>
+
+
+    <string name="app_update_key">1_1</string>
+
+
+    <string name="view_swiped_right">%1$s swiped to right!</string>
+    <string name="view_swiped_left">%1$s swiped to left!</string>
+    <string name="stack_empty">stack_empty!</string>
+
+</resources>

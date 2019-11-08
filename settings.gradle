@@ -1,0 +1,1 @@
+include ':app', ':didi_sdk_for_common_v1.1.0_05_28', ':swipe_cards_library'

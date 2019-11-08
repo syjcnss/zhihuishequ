@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/action_bar_rl"
+        style="@style/top_rl"
+        >
+
+        <ImageView
+            android:id="@+id/back_iv"
+            style="@style/top_back"
+            />
+
+        <TextView
+            android:id="@+id/top_title"
+            style="@style/top_title"
+            android:text="我的活动"
+            />
+
+    </RelativeLayout>
+
+    <View
+        style="@style/split_line"/>
+
+    <ListView
+        android:id="@+id/lv_my_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
+
+
+    </ListView>
+</LinearLayout>

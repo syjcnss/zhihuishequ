@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="16dp">
+    <TextView
+        android:id="@+id/survey_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.你对社区环境感觉如何？"
+        android:textColor="@color/title_text"
+        android:textSize="16sp"/>
+    <com.ovu.lido.widgets.ListViewForScrollView
+        android:id="@+id/survey_options_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/white"
+        android:visibility="visible"/>
+    <EditText
+        android:id="@+id/survey_options_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/survey_et_bg"
+        android:hint="请输入..."
+        android:textSize="16sp"
+        android:visibility="gone"/>
+</LinearLayout>

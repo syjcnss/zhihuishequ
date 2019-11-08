@@ -1,0 +1,110 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'lido'
+            keyPassword '123456'
+            storeFile file('D:/waibao/zhihuishequ/lido.keystore')
+            storePassword '123456'
+        }
+    }
+    compileSdkVersion 27
+    defaultConfig {
+        multiDexEnabled true
+        applicationId "com.ovu.lido"
+        minSdkVersion 18
+        targetSdkVersion 27
+        versionCode 36
+        versionName "3.1.3"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+
+        ndk {
+            //选择要添加的对应 cpu 类型的 .so 库。
+            abiFilters 'armeabi'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64', 'armeabi-v7a', 'arm64-v8a'
+        }
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "a29346b42d926bb1b24de199", //JPush 上注册的包名对应的 Appkey.
+                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+        ]
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+
+    //添加如下配置就ok了
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    buildToolsVersion '27.0.3'
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation(name: 'cmbsdk-release-1.0', ext: 'aar')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:support-v4:27.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'com.github.clans:fab:1.6.4'
+    implementation 'com.github.bumptech.glide:glide:4.5.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.3.1'
+    implementation 'com.squareup.okhttp3:okhttp:3.3.1'
+    implementation 'com.zhy:okhttputils:2.6.2'
+    //工具类
+    implementation 'com.blankj:utilcode:1.14.0'
+    //地址选择器
+    implementation 'com.github.addappcn:android-pickers:1.0.3'
+    implementation 'com.alibaba:fastjson:1.1.56.android'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+    //上拉加载更多
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-28'
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-28'
+    implementation 'com.github.LuckSiege.PictureSelector:picture_library:v2.2.3'
+    //okgo 网络请求框架包
+    implementation 'com.lzy.net:okgo:3.0.4'
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    implementation 'org.apache.httpcomponents:httpcore:4.4.5'
+    implementation 'com.inuker.bluetooth:library:1.4.0'
+    implementation 'com.tuyenmonkey:mkloader:1.4.0'
+    implementation 'com.github.Bakumon:StatusLayoutManager:1.0.2'
+    //根据不同状态加载不同布局
+    implementation files('libs/alipaySingle-20160809.jar')
+    implementation files('libs/libammsdk.jar')
+    implementation project(':didi_sdk_for_common_v1.1.0_05_28')
+    implementation 'com.classic.common:multiple-status-view:1.4'
+    implementation 'cn.bingoogolapple:bga-banner:2.2.4@aar'
+    implementation files('libs/umeng-analytics-v6.0.1.jar')
+    implementation 'com.bm.photoview:library:1.4.1'
+    implementation 'com.android.support:multidex:1.0.1'
+    implementation files('libs/rfBleService_V2.1.6c.jar')
+    // JPush 3.0.9 版本为例。
+    implementation 'cn.jiguang.sdk:jpush:3.3.4'
+    // JCore 1.1.7 版本为例。
+    implementation 'cn.jiguang.sdk:jcore:2.1.2'
+    implementation project(':swipe_cards_library')
+}
