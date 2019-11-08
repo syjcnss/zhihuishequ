@@ -1,14 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    signingConfigs {
-        config {
-            keyAlias 'lido'
-            keyPassword '123456'
-            storeFile file('D:/waibao/zhihuishequ/lido.keystore')
-            storePassword '123456'
-        }
-    }
+//   android signingConfigs {
+//        config {
+//            keyAlias 'lido'
+//            keyPassword '123456'
+//            storeFile file('D:/waibao/zhihuishequ/lido.keystore')
+//            storePassword '123456'
+//        }
+//    }
     compileSdkVersion 27
     defaultConfig {
         multiDexEnabled true
